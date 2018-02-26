@@ -21,8 +21,6 @@ if __name__== '__main__':
 	rastrigin(listax,listay)
 	z=np.array(np.append(listat,listaz))
 	z=z.reshape(z.shape[0],1)
-	
-	
 	x,y=np.meshgrid(listax,listay)
 	fig=plt.figure()
 	fig.canvas.set_window_title('Evolutionary Computing')
@@ -30,13 +28,7 @@ if __name__== '__main__':
 	ax.plot_surface(x,y,z,color='g',rstride=1, cstride=1, cmap=cm.viridis, linewidth=0, antialiased=False,label='Optimization') 
 	ax.set_xlabel('X')
 	ax.set_ylabel('Y')
-	ax.set_zlabel('Z')	
-	#ax.text(0,0,'Pruebas Grafica',verticalaalignment='center',fontsize=14, horizontalalignment='left',color='blue',rotation='vertical')
-#	ax.text(0, 0,'Pruebas grafica',
- #       horizontalalignment='right',
-  #      verticalalignment='center',
-   #     rotation='vertical',
-    #    transform=ax.transAxes)
+	ax.set_zlabel('Z')
 	plt.title("Practice 1: 3D Rastrigin's function ")
 	plt.show()
 	plt.savefig('test.png')
